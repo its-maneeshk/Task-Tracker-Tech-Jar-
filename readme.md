@@ -1,16 +1,100 @@
-# React + Vite
+# Mini Task Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+A simple **Task Tracker** built with **React Hooks** to manage tasks efficiently.
+Users can **add, edit, delete, search, filter, and sort tasks**. Tasks persist using a **mock API (localStorage)**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Display a list of tasks (title, due date, status).
+* Add new tasks with title and due date.
+* Edit task status (Pending / Done) and delete tasks.
+* Filter tasks by status (All, Pending, Done).
+* Search tasks by title with **debounced input**.
+* Sort tasks by **date** or **name**.
+* Responsive and clean design using **plain CSS** (or Tailwind).
+* Built using **React Hooks** (no class components).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+* **React** (functional components & hooks)
+* **JavaScript (ES6+)**
+* **CSS / Tailwind**
+* **LocalStorage** for task persistence (mock API)
+
+---
+
+## Project Structure
+
+```
+src/
+ ├─ components/
+ │   ├─ TaskForm.jsx      # Form to add new tasks
+ │   ├─ TaskList.jsx      # List of tasks
+ │   ├─ TaskItem.jsx      # Single task row
+ │   ├─ FilterBar.jsx     # Filter, search & sort controls
+ │
+ ├─ hooks/
+ │   └─ useDebounce.js    # Custom debounce hook
+ │
+ ├─ services/
+ │   └─ taskApi.js        # Mock API using localStorage
+ │
+ ├─ App.jsx               # Main component
+ └─ index.css             # Styling
+```
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```
+git clone <repo-url>
+cd task-tracker
+```
+
+2. Install dependencies:
+
+```
+npm install
+```
+
+3. Run the project:
+
+```
+npm start
+```
+
+4. Open in browser:
+
+```
+http://localhost:3000
+```
+
+---
+
+## Usage
+
+1. Use the **form** to add a new task.
+2. Use **filter dropdown** to view tasks by status.
+3. **Search** tasks by title (debounced).
+4. **Sort** tasks by date or name.
+5. Toggle task **status** or delete tasks directly.
+
+---
+
+## Future Improvements
+
+* Add **inline edit or modal edit** for tasks.
+* Integrate with a **real backend API**.
+* Add **priority levels** for tasks.
+* Add **unit tests** for components.
+
+---
