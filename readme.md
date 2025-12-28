@@ -34,16 +34,18 @@ Users can **add, edit, delete, search, filter, and sort tasks**. Tasks persist u
 ```
 src/
  ├─ components/
- │   ├─ TaskForm.jsx      # Form to add new tasks
+ │   ├─ TaskForm.jsx       # Form to add new tasks
  │   ├─ TaskList.jsx      # List of tasks
- │   ├─ TaskItem.jsx      # Single task row
- │   ├─ FilterBar.jsx     # Filter, search & sort controls
+ │   ├─ TaskItem.jsx     # Single task row
+ │   ├─ FilterFilter.jsx     # Filter controls
+ │   ├─ FilterSearch.jsx     # Search control 
+ │   ├─ FilterShort.jsx     # Sort control 
  │
  ├─ hooks/
  │   └─ useDebounce.js    # Custom debounce hook
  │
  ├─ services/
- │   └─ taskApi.js        # Mock API using localStorage
+ │   └─ taskService.js        # Mock API using localStorage
  │
  ├─ App.jsx               # Main component
  └─ index.css             # Styling
@@ -56,7 +58,7 @@ src/
 1. Clone the repository:
 
 ```
-git clone <repo-url>
+git clone "https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-.git"
 cd task-tracker
 ```
 
@@ -75,7 +77,7 @@ npm start
 4. Open in browser:
 
 ```
-http://localhost:3000
+http://localhost:5173
 ```
 
 ---
@@ -90,11 +92,12 @@ http://localhost:3000
 
 ---
 
-## Future Improvements
+## Demo Screenshots  
 
-* Add **inline edit or modal edit** for tasks.
-* Integrate with a **real backend API**.
-* Add **priority levels** for tasks.
-* Add **unit tests** for components.
+| **Interface** | **Preview** |
+|--------------|------------|
+| **Home Screen** | <img src="https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-/blob/27b0fddb1c20d84b2612f8cdc3ca68b616af3b46/public/screenshot/Homescreen_screenshot.png" width="200px"> |
+| **Adding Task** | <img src="https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-/blob/27b0fddb1c20d84b2612f8cdc3ca68b616af3b46/public/screenshot/Adding-Task_screenshot.png" width="200px"> |
+| **Searching Task** | <img src="https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-/blob/27b0fddb1c20d84b2612f8cdc3ca68b616af3b46/public/screenshot/Searching-Task_screenshot.png" width="200px"> |
 
 ---
