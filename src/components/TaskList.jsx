@@ -1,9 +1,11 @@
-import React from 'react'
+import TaskItem from "./TaskItem";
 
-function TaskList() {
+export default function TaskList({ tasks, setTasks }) {
   return (
-    <div>TaskList</div>
-  )
+    <div className="space-y-2">
+      {tasks.map(task => (
+        <TaskItem key={task.id} task={task} setTasks={setTasks} />
+      ))}
+    </div>
+  );
 }
-
-export default TaskList
