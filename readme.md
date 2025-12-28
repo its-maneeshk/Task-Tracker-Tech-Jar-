@@ -58,7 +58,8 @@ src/
 1. Clone the repository:
 
 ```
-git clone "https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-.git"
+git clone https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-.git
+
 cd task-tracker
 ```
 
@@ -96,8 +97,8 @@ http://localhost:5173
 
 | **Interface** | **Preview** |
 |--------------|------------|
-| **Home Screen** | <img src="https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-/blob/27b0fddb1c20d84b2612f8cdc3ca68b616af3b46/public/screenshot/Homescreen_screenshot.png" width="200px"> |
-| **Adding Task** | <img src="https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-/blob/27b0fddb1c20d84b2612f8cdc3ca68b616af3b46/public/screenshot/Adding-Task_screenshot.png" width="200px"> |
-| **Searching Task** | <img src="https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-/blob/27b0fddb1c20d84b2612f8cdc3ca68b616af3b46/public/screenshot/Searching-Task_screenshot.png" width="200px"> |
+| **Home Screen** | <img src="https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-/blob/27b0fddb1c20d84b2612f8cdc3ca68b616af3b46/public/screenshot/Homescreen_screenshot.png" width="400px"> |
+| **Adding Task** | <img src="https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-/blob/27b0fddb1c20d84b2612f8cdc3ca68b616af3b46/public/screenshot/Adding-Task_screenshot.png" width="400px"> |
+| **Searching Task** | <img src="https://github.com/its-maneeshk/Task-Tracker-Tech-Jar-/blob/27b0fddb1c20d84b2612f8cdc3ca68b616af3b46/public/screenshot/Searching-Task_screenshot.png" width="400px"> |
 
 ---
